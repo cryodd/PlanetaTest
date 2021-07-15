@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="test.xaml.cs" />
+    <Compile Remove="testDetail.xaml.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="test.xaml" />
+    <None Remove="testDetail.xaml" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+  </ItemGroup>
+
+</Project>
